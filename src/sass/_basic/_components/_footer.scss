@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    border-top: 1px solid $grey;
+
+    @media all and(max-width: 991px) {
+        padding: 30px 20px 0;
+    }
+    @media all and(max-width:768px) {
+        flex-direction: column;
+    }
+}
