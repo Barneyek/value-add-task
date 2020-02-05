@@ -1,0 +1,12 @@
+.cooperation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media all and(max-width: 991px) {
+       display: none;
+    }
+}

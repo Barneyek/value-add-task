@@ -1,0 +1,15 @@
+.companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 50px 30px 30px;
+    &__item {
+        border: 1px solid $grey;
+
+        img {
+            width: 230px;
+            padding: 30px 20px;
+        }
+    }
+}
