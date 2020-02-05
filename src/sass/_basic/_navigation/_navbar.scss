@@ -1,0 +1,112 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+    padding: 10px 30px;
+
+    @media all and(max-width: 991px) {
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    .menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+
+        @media all and(max-width: 991px) {
+            position: absolute;
+            top: -350px;
+            left: 0;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            background: $red;
+            padding: 60px 0;
+            transition: all 0.5s linear;
+
+            &.show {
+                top: 0;
+            }
+        }
+
+        &__item {
+            padding: 0 25px;
+
+            @media all and(max-width: 991px) {
+                padding: 10px 0;
+            }
+
+            >a {
+                color: $black;
+                font-weight: 700;
+
+                &.active {
+                    position: relative;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: -9px;
+                        left: 0;
+                        height: 3px;
+                        width: 100%;
+                        background-color: $blue;
+                    }
+                }
+            }
+
+            @media all and(max-width: 991px) {
+                >a {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .handle-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 90px;
+        z-index: 999;
+        cursor: pointer;
+        pointer-events: all;
+
+        @media all and(min-width: 992px) {
+            display: none;
+        }
+
+        .handle-menu__bar-1,
+        .handle-menu__bar-2,
+        .handle-menu__bar-3 {
+            display: block;
+            background-color: black;
+            width: 30px;
+            height: 2px;
+            margin: 4px;
+            transition: transform .4s, opacity .4s;
+
+        }
+    }
+
+    .change {
+        .handle-menu__bar-1 {
+            transform: rotate(45deg) translate(6px, 8px);
+        }
+
+        .handle-menu__bar-2 {
+            opacity: 0;
+        }
+
+        .handle-menu__bar-3 {
+            transform: rotate(-45deg) translate(6px, -8px);
+        }
+    }
+}
