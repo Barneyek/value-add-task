@@ -1,0 +1,35 @@
+.header {
+    height: 420px;
+    background: $black url('../assets/desktop_banner_photo.png') no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+
+    &__desc {
+        max-width: 1200px;
+        margin: 0 auto 30px;
+        padding: 10px 30px;
+
+        @media all and(max-width: 991px) {
+            padding: 10px 20px;
+        }
+
+        h1 {
+            padding-bottom: 5px;
+        }
+
+        p {
+            max-width: 80%;
+
+            @media all and(max-width: 991px) {
+                max-width: 100%;
+            }
+        }
+
+        h1,
+        p {
+            color: #fff;
+        }
+    }
+}
