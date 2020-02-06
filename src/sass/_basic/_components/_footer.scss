@@ -1,16 +1,30 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 30px;
-    border-top: 1px solid $grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  border-top: 1px solid $grey;
 
-    @media all and(max-width: 991px) {
-        padding: 30px 20px 0;
+  @media all and(max-width: 991px) {
+    padding: 30px 20px 0;
+  }
+  @media all and(max-width: 767px) {
+    flex-direction: column;
+  }
+
+  &__copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+    p {
+      font-size: 11px;
+      font-weight: 700;
+      color: #a19b9b;
+      margin-bottom: 0;
     }
-    @media all and(max-width:768px) {
-        flex-direction: column;
-    }
+  }
 }

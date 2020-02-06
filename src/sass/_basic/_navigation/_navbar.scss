@@ -125,7 +125,9 @@
 
     &__item {
         padding: 0 10px;
-
+        @media all and(max-width: 767px) {
+            padding: 6px 0;
+        }
         >a {
             color: $grey;
         }
@@ -133,5 +135,8 @@
 
     &__social>img {
         padding: 0 5px;
+        @media all and(max-width: 767px) {
+            margin-top: 10px;
+        }
     }
 }
