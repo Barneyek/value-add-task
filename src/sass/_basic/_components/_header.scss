@@ -5,6 +5,15 @@
     flex-direction: column;
     justify-content: flex-end;
 
+    @media all and(max-width: 767px) {
+        background: $black url('../assets/phone_banner_photo.png') no-repeat;
+        background-size: cover;
+    }
+
+    @media all and(min-width: 768px) and (max-width: 991px) {
+        background: $black url('../assets/tablet_banner_photo.png') no-repeat;
+        background-size: cover;
+    }
 
     &__desc {
         max-width: 1200px;

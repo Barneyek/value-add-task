@@ -1,0 +1,60 @@
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &__label {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    &__input,
+    &__select,
+    &__textbox {
+        border: 1px solid $grey;
+        padding: 7px 15px;
+        font-size: 13px;
+        color: $black;
+        margin-bottom: 30px;
+
+        &::placeholder {
+            color: #b1acac;
+        }
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        @media all and(max-width: 991px) {
+        display: none;
+        }
+        input {
+            display: none;
+        }
+
+        label {
+            cursor: pointer;
+            font-size: 13px;
+            margin: 0 0 0 5px;
+        }
+
+        input+label:before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            border: 1px solid $grey;
+            border-radius: 2px;
+            background: transparent;
+            position: relative;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        input:checked+label:before {
+            background: blue;
+        }
+    }
+    &__button{
+        display: flex;
+        justify-content: flex-end;
+    }
+}

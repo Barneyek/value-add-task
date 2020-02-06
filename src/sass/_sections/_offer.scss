@@ -1,0 +1,13 @@
+.offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 30px 30px;
+
+    @media all and(max-width: 991px) {
+        padding: 30px 20px 0;
+    }
+}

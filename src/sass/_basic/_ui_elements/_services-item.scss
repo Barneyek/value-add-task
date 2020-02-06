@@ -1,0 +1,23 @@
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+
+    &__item {
+        max-width: 33.333333%;
+        text-align: center;
+        padding: 25px 35px;
+        background: transparent url('../assets/Pattern.png') no-repeat;
+        background-size: cover;
+
+        @media all and(max-width: 767px) {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px 10px;
+        }
+
+        h3 {
+            margin: 30px 0 15px;
+        }
+    }
+}
