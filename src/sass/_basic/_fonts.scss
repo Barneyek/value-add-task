@@ -1,2 +1,14 @@
-$Montserrat: 'Montserrat', sans-serif;
-$OpenSans: 'Open Sans', sans-serif;
+$Montserrat: 'Montserrat',
+sans-serif;
+$OpenSans: 'Open Sans',
+sans-serif;
+
+h1 {
+    font-size: 32px;
+    line-height: 42px;
+
+    @media all and(max-width: 991px) {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}

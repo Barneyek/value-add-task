@@ -41,7 +41,9 @@ a {
 a,
 p {
     font-size: 16px;
+    font-weight: 300;
     line-height: 24px;
+    font-family: $Montserrat;
 }
 
 h1,
@@ -50,6 +52,8 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: $OpenSans;
+    font-weight: 700;
 }
 
 img {
