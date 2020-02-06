@@ -1,0 +1,18 @@
+.button {
+    background-color: $red;
+    border-radius: 5px;
+    text-align: center;
+    color: $white;
+    text-decoration: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+
+    &--login {
+        color: #fff;
+        padding: 5px 35px;
+
+        @media all and(max-width: 991px) {
+            display: none;
+        }
+    }
+}
